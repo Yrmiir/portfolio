@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yrmiir — веб-дизайн и вёрстка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header text-accent">
+        <div class="header__inner">
+            <a href="#contact">@yrmiir</a>
+
+            <button class="header__menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false"
+                aria-controls="header-nav">
+                <span class="header__menu-icon" aria-hidden="true"></span>
+            </button>
+
+            <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+                <a href="#about" class="header__link">обо мне</a>
+                <a href="#portfolio" class="header__link">портфолио</a>
+                <a href="#contact" class="header__link">контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__inner">
+                <div class="hero__top">
+                    <blockquote class="hero__quote">
+                        <span class="hero__quote-mark hero__quote-mark--top" aria-hidden="true">
+                            <img src="assets/icons/quote.svg" alt="" class="hero__quote-icon">
+                            <img src="assets/icons/quote.svg" alt="" class="hero__quote-icon">
+                        </span>
+                        <h1 class="hero__title h1-regular">Привет, меня зовут <span class="h1-accent"> Игорь </span> и я
+                            <span class="h1-accent">начинающий специалист</span> в
+                            сфере <span class="h1-accent"> веб дизайна</span>.
+                            <br>Работаю с UI, типографикой и структурой сайтов
+                        </h1>
+                        <span class="hero__quote-mark hero__quote-mark--bottom" aria-hidden="true">
+                            <img src="assets/icons/quote.svg" alt="" class="hero__quote-icon">
+                            <img src="assets/icons/quote.svg" alt="" class="hero__quote-icon">
+                        </span>
+                    </blockquote>
+                    <div class="hero__avatar">
+                        <img src="assets/photo.png" alt="Игорь">
+                    </div>
+                </div>
+                <div class="hero__actions">
+                    <a href="#portfolio" class="btn btn--primary">мои работы</a>
+                    <a href="#contact" class="btn btn--primary">связаться со мной</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h3>Познакомимся поближе?</h3>
+                <h2>Кто я и чем занимаюсь</h2>
+                <div class="about__card">
+                    <ul class="about__list">
+                        <li>Я студент 3 курса по специальности «информационные технологии в дизайне». Сейчас
+                            развиваюсь в направлении веб дизайна и frontend разработки</li>
+                        <li>Знаю основы дизайна и вёрстки, и продолжаю развиваться в этих направлениях</li>
+                        <li>Ценю аккуратность и эстетику, стараюсь отражать это в своих работах</li>
+                    </ul>
+                    <div class="about__tools">
+                        <p>Что использую в проектах</p>
+                        <div class="about__tools-group">
+                            <p class="text-accent">дизайн</p>
+                            <div class="about__icons">
+                                <span class="about__icon">
+                                    <img src="assets/icons/figma.svg" alt="Figma">
+                                    <span class="text-small">figma</span>
+                                </span>
+                                <span class="about__icon">
+                                    <img src="assets/icons/photoshop.svg" alt="Photoshop">
+                                    <span class="text-small">photoshop</span>
+                                </span>
+                                <span class="about__icon">
+                                    <img src="assets/icons/illustrator.svg" alt="Illustrator">
+                                    <span class="text-small">illustrator</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="about__tools-group">
+                            <p class="text-accent">разработка</p>
+                            <div class="about__icons">
+                                <span class="about__icon">
+                                    <img src="assets/icons/html.svg" alt="HTML">
+                                    <span class="text-small">html</span>
+                                </span>
+                                <span class="about__icon">
+                                    <img src="assets/icons/css.svg" alt="CSS">
+                                    <span class="text-small">css</span>
+                                </span>
+                                <span class="about__icon">
+                                    <img src="assets/icons/javascript.svg" alt="JavaScript">
+                                    <span class="text-small">JavaScript</span>
+                                </span>
+                                <span class="about__icon">
+                                    <img src="assets/icons/react.svg" alt="React">
+                                    <span class="text-small">react</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="projects">
+            <div class="container">
+                <h2>Здесь я собрал свои актуальные проекты</h2>
+                <ul class="projects__grid">
+                    <li class="project-card" data-project-id="matcha-landing" tabindex="0" role="button"
+                        aria-haspopup="dialog" aria-label="Открыть скриншоты проекта «Дизайн для продажи матчи»">
+                        <img class="project-card__image" src="assets/cards/matcha-landing.png"
+                            alt="Превью проекта «Дизайн для продажи матчи»" loading="lazy">
+                        <div class="project-card__meta">
+                            <ul class="project-card__tags" aria-label="Инструменты проекта">
+                                <li class="project-card__tag project-card__tag--figma text-small">Figma</li>
+                                <li class="project-card__tag project-card__tag--html text-small">HTML</li>
+                                <li class="project-card__tag project-card__tag--css text-small">CSS</li>
+                                <li class="project-card__tag project-card__tag--javascript text-small">JavaScript</li>
+                            </ul>
+                            <h3 class="project-card__title text-accent">Дизайн для продажи матчи</h3>
+                        </div>
+                    </li>
+                    <li class="project-card" data-project-id="cozy-winter" tabindex="0" role="button"
+                        aria-haspopup="dialog" aria-label="Открыть скриншоты проекта «Дизайн игры Cozy Winter»">
+                        <img class="project-card__image" src="assets/cards/cozy-winter.png"
+                            alt="Превью проекта «Дизайн игры Cozy Winter»" loading="lazy">
+                        <div class="project-card__meta">
+                            <ul class="project-card__tags" aria-label="Инструменты проекта">
+                                <li class="project-card__tag project-card__tag--figma text-small">Figma</li>
+                            </ul>
+                            <h3 class="project-card__title">Дизайн игры «Cozy Winter»</h3>
+                        </div>
+                    </li>
+                    <li class="project-card" data-project-id="cuture" tabindex="0" role="button" aria-haspopup="dialog"
+                        aria-label="Открыть скриншоты проекта «Учебный проект НИИ Культура»">
+                        <img class="project-card__image" src="assets/cards/nii-kultura.png"
+                            alt="Превью учебного проекта НИИ «Культура»" loading="lazy">
+                        <div class="project-card__meta">
+                            <ul class="project-card__tags" aria-label="Инструменты проекта">
+                                <li class="project-card__tag project-card__tag--react text-small">React</li>
+                                <li class="project-card__tag project-card__tag--bootstrap text-small">Bootstrap</li>
+                            </ul>
+                            <h3 class="project-card__title">Учебный проект НИИ «Культура»</h3>
+                        </div>
+                    </li>
+                    <li class="project-card" data-project-id="massachusetts" tabindex="0" role="button"
+                        aria-haspopup="dialog" aria-label="Открыть скриншоты проекта «Massachusetts state»">
+                        <img class="project-card__image" src="assets/cards/massachusetts.png"
+                            alt="Превью презентации «Massachusetts state»" loading="lazy">
+                        <div class="project-card__meta">
+                            <ul class="project-card__tags" aria-label="Инструменты проекта">
+                                <li class="project-card__tag project-card__tag--powerpoint text-small">PowerPoint</li>
+                            </ul>
+                            <h3 class="project-card__title">Презентация «Massachusetts state»</h3>
+                        </div>
+                    </li>
+                    <li class="project-card" data-project-id="memorial-and-patriots" tabindex="0" role="button"
+                        aria-haspopup="dialog" aria-label="Открыть скриншоты проекта «Memorial Day Patriots' Day»">
+                        <img class="project-card__image" src="assets/cards/Memorial-day.png"
+                            alt="Превью презентации «Memorial Day Patriots' Day»" loading="lazy">
+                        <div class="project-card__meta">
+                            <ul class="project-card__tags" aria-label="Инструменты проекта">
+                                <li class="project-card__tag project-card__tag--powerpoint text-small">PowerPoint</li>
+                            </ul>
+                            <h3 class="project-card__title">Презентация «Memorial Day Patriots' Day»</h3>
+                        </div>
+                    </li>
+                    <li class="project-card" data-project-id="posters" tabindex="0" role="button" aria-haspopup="dialog"
+                        aria-label="Открыть скриншоты проекта «Постеры Shapes Type Colors»">
+                        <img class="project-card__image" src="assets/cards/posters.png"
+                            alt="Превью постеров «Shapes», «Type», «Colors»" loading="lazy">
+                        <div class="project-card__meta">
+                            <ul class="project-card__tags" aria-label="Инструменты проекта">
+                                <li class="project-card__tag project-card__tag--illustrator text-small">Illustrator
+                                </li>
+                            </ul>
+                            <h3 class="project-card__title">Постеры «Shapes», «Type», «Colors»</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Для связи со мной</h2>
+            <div class="contact__layout">
+                <div class="contact__buttons">
+                    <a href="https://t.me/yrmiir" class="contact__social" target="_blank" rel="noopener"><span
+                            class="text-main">TELEGRAM</span></a>
+                    <a href="#" class="contact__social" target="_blank" rel="noopener"><span
+                            class="text-main">VKONTAKTE</span></a>
+                    <a href="https://ru.pinterest.com/yrmiir/" class="contact__social" target="_blank"
+                        rel="noopener"><span class="text-main">PINTEREST</span></a>
+                    <a href="mailto:igor.yarmizin@gmail.com" class="contact__social"><span
+                            class="text-main">igor.yarmizin<br>@gmail.com</span></a>
+                </div>
+                <form class="contact-form" action="#" method="get" novalidate>
+                    <label class="contact-form__label">
+                        <span class="contact-form__name text-small">имя</span>
+                        <input type="text" name="name" class="contact-form__input text-main" placeholder="Ваше имя">
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__name text-small">ник в Telegram</span>
+                        <input type="text" name="telegram" class="contact-form__input text-main"
+                        placeholder="@username">
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__name text-small">почта</span>
+                        <input type="email" name="email" class="contact-form__input text-main"
+                            placeholder="name@mail.com" autocomplete="email" aria-describedby="email-error"
+                            aria-invalid="false">
+                        <span class="contact-form__error text-small" id="email-error" aria-live="polite"></span>
+                    </label>
+                    <div class="contact-form__actions">
+                        <button type="submit" class="btn btn--primary">отправить</button>
+                        <span class="contact-form__status text-main" id="contact-form-status" aria-live="polite"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="contact__handle" aria-label="@YRMIIR">
+                <span class="contact__handle-logo" aria-hidden="true"></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="project-modal__backdrop" data-modal-close></div>
+        <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button class="project-modal__close" type="button" data-modal-close aria-label="Закрыть модальное окно">
+                ×
+            </button>
+            <h3 class="project-modal__title" id="project-modal-title"></h3>
+            <ul class="project-modal__gallery" id="project-modal-gallery"></ul>
+        </div>
+    </div>
+    <div class="screen-viewer" id="screen-viewer" aria-hidden="true">
+        <div class="screen-viewer__backdrop" data-viewer-close></div>
+        <div class="screen-viewer__dialog" role="dialog" aria-modal="true" aria-label="Просмотр скриншота">
+            <button class="screen-viewer__close" type="button" data-viewer-close
+                aria-label="Закрыть просмотр скриншота">
+                ×
+            </button>
+            <img class="screen-viewer__image" id="screen-viewer-image" src="" alt="">
+        </div>
+    </div>
+    <script src="src/header-menu.js"></script>
+    <script src="src/projects-modal.js"></script>
+    <script src="src/contact-form-validation.js"></script>
+</body>
+
+</html>
